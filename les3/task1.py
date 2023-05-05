@@ -5,6 +5,7 @@ def modification(lst):
     lst = lst[-1:len(lst)+1] + lst[1:len(lst)-1] + lst[0:1]
     return lst
 
+
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 

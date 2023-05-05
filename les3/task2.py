@@ -10,6 +10,7 @@ def get_list_info(lst):
     average = round(sum(lst)/7, 2)
     return min_elem, max_elem, sum_list, average
 
+
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 
