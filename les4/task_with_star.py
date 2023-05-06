@@ -12,7 +12,7 @@
 # 4974 --> 7974
 
 def max_division_by_3(num):
-    # Здесь нужно написать код
+    lst_num = map(int, str(num))
     return new_num
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

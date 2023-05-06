@@ -6,7 +6,10 @@
 
 
 def flatten_and_sort(array):
-    # Здесь нужно написать код
+    result_list = []
+    for i in range(len(array)):
+        result_list.extend(array[i])
+    result_list.sort()
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
