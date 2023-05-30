@@ -29,6 +29,7 @@ class PersonInfo:
         :param age: число - возраст сотрудника
         :param dep: подразделения от головного до того, где работает сотрудник.
         """
+
         self.name = name.split(' ')
         self.age = age
         self.dep = dep
@@ -37,6 +38,7 @@ class PersonInfo:
         """
         :return: возвращает краткую запись имени в формате "Фамилия И."
         """
+
         return f'{self.name[1]} {self.name[0][0]}.'
 
 

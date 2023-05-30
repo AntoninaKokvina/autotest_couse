@@ -46,7 +46,6 @@ class Segment:
         return True if self.dot_a[0] * self.dot_b[0] < 0 else False
 
 
-
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 
 

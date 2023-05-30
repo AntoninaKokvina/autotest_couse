@@ -33,6 +33,7 @@ class PublicTransport:
         :param color: Цвет
         :param max_speed: Максимальная скорость
         """
+
         self.brand = brand
         self._engine_power = engine_power
         self.year = year
@@ -44,6 +45,7 @@ class PublicTransport:
         """
         Выводит на печать информацию о: марке, цвете, годе выпуска и мощности двигателя
         """
+
         print(f'Марка: {self.brand}'
               f'Цвет: {self.color}'
               f'Год выпуска: {self.year}'
@@ -62,6 +64,7 @@ class Bus(PublicTransport):
         :param park: Парк приписки автобуса (private)
         :param fare: Стоимость проезда (protected)
         """
+
         super().__init__(brand, engine_power, year, color, max_speed)
         self.passengers = passengers
         self.park = park
@@ -89,6 +92,7 @@ class Tram(PublicTransport):
         :param path: Длина маршрута
         :param fare: Стоимость проезда
         """
+
         super().__init__(brand, engine_power, year, color, max_speed)
         self.__route = route
         self.path = path
