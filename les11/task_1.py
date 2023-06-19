@@ -28,11 +28,12 @@ try:
     driver.switch_to.window(driver.window_handles[1]) #переходим на открывшуюся вкладку
     assert driver.current_url == 'https://tensor.ru/', 'Неверная ссылка'
     strenght = driver.find_element(By.CSS_SELECTOR, '.tensor_ru-Index__block4-content ' '.tensor_ru-Index__card-title')
-    driver.execute_script("return arguments[0].scrollIntoView(true);", strenght)
+    strenght.location_once_scrolled_into_view
     sleep(2)
     assert strenght.is_displayed(), 'Элемент "Сила в людях" не отображается'
     assert strenght.text == 'Сила в людях', 'Неверный заголовок новости'
     news_more = driver.find_element(By.CSS_SELECTOR, '.tensor_ru-Index__link[href="/about"]')
+    news_more.location_once_scrolled_into_view
     assert news_more.is_displayed(), 'Элемент "Подробнее" не отображается'
     sleep(2)
     driver.execute_script("return arguments[0].scrollIntoView(true);", news_more)
