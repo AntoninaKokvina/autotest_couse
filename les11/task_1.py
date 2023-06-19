@@ -11,7 +11,6 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
 
-
 test_site = 'https://sbis.ru/'
 driver = webdriver.Chrome()  # запуск браузера
 try:
