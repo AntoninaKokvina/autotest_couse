@@ -11,7 +11,6 @@ from atf import *
 from pages.auth_page import AuthSbis
 from pages.contacts_page import ContactsPage
 
-
 class TestTaskFolder(TestCaseUI):
 
     @classmethod
@@ -21,6 +20,7 @@ class TestTaskFolder(TestCaseUI):
 
     def test_01_move_massage(self):
         '''Перемещение сообщения в другую папку и назад'''
+        pass
 
         self.page = ContactsPage(self.driver)
         self.page.check_load()
@@ -57,7 +57,6 @@ class TestTaskFolder(TestCaseUI):
         self.page.select_tab('Диалоги')
         self.page.messages.item(contains_text='Диалог для автотеста').should_be(ContainsText('21 июн 03:40'))
         delay(2)
-
 
     def test_03_tag(self):
         log('Пометить сообщение тегом для автотеста')
